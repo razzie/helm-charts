@@ -1,2 +1,11 @@
 apiVersion: v1
 entries:
+  cert-manager-webhook-namecheap:
+  - apiVersion: v2
+    appVersion: v0.1.0
+    description: Namecheap Webhook for Cert Manager
+    digest: 77fba8e2d64751fa652a3cd25f956b9e681b474538f2dcb4417c01e9caeeb6f1
+    name: cert-manager-webhook-namecheap
+    urls:
+    - cert-manager-webhook-namecheap-0.1.0.tgz
+    version: 0.1.0
