@@ -3,11 +3,20 @@ entries:
   cert-manager-webhook-namecheap:
   - apiVersion: v2
     appVersion: v0.2.0
-    created: "2022-07-08T16:37:35.417480344+02:00"
+    created: "2022-07-18T04:31:48.128539842+02:00"
     description: Namecheap Webhook for Cert Manager
     digest: c4cabb6b5d0e1f6c2e31417330cdb2fadc94f23fd9a5f2decd2ed1b97afd8922
     name: cert-manager-webhook-namecheap
     urls:
     - cert-manager-webhook-namecheap-0.2.0.tgz
     version: 0.2.0
-generated: "2022-07-08T16:37:35.416963988+02:00"
+  k8s-db-operator:
+  - apiVersion: v2
+    created: "2022-07-18T04:31:48.128957434+02:00"
+    description: k8s-db-operator helm chart
+    digest: 7af12567abcf1a2fb36a15f468588804f4da6ca227864e2b06b2e74be895bc21
+    name: k8s-db-operator
+    urls:
+    - k8s-db-operator-0.0.1.tgz
+    version: 0.0.1
+generated: "2022-07-18T04:31:48.12744645+02:00"
