@@ -1,9 +1,38 @@
 apiVersion: v1
 entries:
+  cert-manager:
+  - annotations:
+      artifacthub.io/prerelease: "false"
+      artifacthub.io/signKey: |
+        fingerprint: 1020CF3C033D4F35BAE1C19E1226061C665DF13E
+        url: https://cert-manager.io/public-keys/cert-manager-keyring-2021-09-20-1020CF3C033D4F35BAE1C19E1226061C665DF13E.gpg
+    apiVersion: v1
+    appVersion: v1.9.1
+    created: "2022-08-04T22:00:33.095515689+02:00"
+    description: A Helm chart for cert-manager
+    digest: 46273177b5ca6930af8047cd52bf0b784c8482ac042e7812d08643c2898692d5
+    home: https://github.com/cert-manager/cert-manager
+    icon: https://raw.githubusercontent.com/cert-manager/cert-manager/d53c0b9270f8cd90d908460d69502694e1838f5f/logo/logo-small.png
+    keywords:
+    - cert-manager
+    - kube-lego
+    - letsencrypt
+    - tls
+    kubeVersion: '>= 1.19.0-0'
+    maintainers:
+    - email: cert-manager-maintainers@googlegroups.com
+      name: cert-manager-maintainers
+      url: https://cert-manager.io
+    name: cert-manager
+    sources:
+    - https://github.com/cert-manager/cert-manager
+    urls:
+    - cert-manager-v1.9.1.tgz
+    version: v1.9.1
   cert-manager-webhook-namecheap:
   - apiVersion: v2
     appVersion: v0.2.0
-    created: "2022-07-18T04:31:48.128539842+02:00"
+    created: "2022-08-04T22:00:33.095921865+02:00"
     description: Namecheap Webhook for Cert Manager
     digest: c4cabb6b5d0e1f6c2e31417330cdb2fadc94f23fd9a5f2decd2ed1b97afd8922
     name: cert-manager-webhook-namecheap
@@ -12,11 +41,105 @@ entries:
     version: 0.2.0
   k8s-db-operator:
   - apiVersion: v2
-    created: "2022-07-18T04:31:48.128957434+02:00"
+    created: "2022-08-04T22:00:33.096253012+02:00"
     description: k8s-db-operator helm chart
     digest: 7af12567abcf1a2fb36a15f468588804f4da6ca227864e2b06b2e74be895bc21
     name: k8s-db-operator
     urls:
     - k8s-db-operator-0.0.1.tgz
     version: 0.0.1
-generated: "2022-07-18T04:31:48.12744645+02:00"
+  nextcloud:
+  - apiVersion: v2
+    appVersion: 24.0.2
+    created: "2022-08-04T22:00:33.112785902+02:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.6.*
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.0.*
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.12.*
+    description: A file sharing server that puts the control and security of your
+      own data back into your hands.
+    digest: b3bea4f932cd15303ca085f53c836641b960653701e0023dd712533f24826c96
+    home: https://nextcloud.com/
+    icon: https://cdn.rawgit.com/docker-library/docs/defa5ffc7123177acd60ddef6e16bddf694cc35f/nextcloud/logo.svg
+    keywords:
+    - nextcloud
+    - storage
+    - http
+    - web
+    - php
+    maintainers:
+    - email: skjnldsv@protonmail.com
+      name: skjnldsv
+    - email: christian.ingenhaag@googlemail.com
+      name: chrisingenhaag
+    - email: jeff@billimek.com
+      name: billimek
+    name: nextcloud
+    sources:
+    - https://github.com/nextcloud/helm
+    - https://github.com/nextcloud/docker
+    urls:
+    - nextcloud-3.0.3.tgz
+    version: 3.0.3
+  reflector:
+  - apiVersion: v2
+    appVersion: 6.1.47
+    created: "2022-08-04T22:00:33.113375086+02:00"
+    description: A Helm chart to deploy Reflector
+    digest: 821bfd118325d44c5f1f42b3fa8e154f5012d36c369460048cb37bb3457e6dfd
+    home: https://github.com/emberstack/kubernetes-reflector
+    icon: https://raw.githubusercontent.com/emberstack/CDN/master/Projects/ES.FX/es.fx.1.0.0.0.png
+    keywords:
+    - reflector
+    - controller
+    - copy
+    - secrets
+    - configmaps
+    - cert-manager
+    - certificates
+    maintainers:
+    - email: helm-charts@emberstack.com
+      name: winromulus
+    name: reflector
+    sources:
+    - https://github.com/emberstack/kubernetes-reflector
+    type: application
+    urls:
+    - reflector-6.1.47.tgz
+    version: 6.1.47
+  traefik:
+  - apiVersion: v2
+    appVersion: 2.8.0
+    created: "2022-08-04T22:00:33.115488788+02:00"
+    description: A Traefik based Kubernetes ingress controller
+    digest: ec878db0b3ca36dda265c334b07e798dfefe156fca31b4f91bdbe8ae598fb7ca
+    home: https://traefik.io/
+    icon: https://raw.githubusercontent.com/traefik/traefik/v2.3/docs/content/assets/img/traefik.logo.png
+    keywords:
+    - traefik
+    - ingress
+    maintainers:
+    - email: emile@vauge.com
+      name: emilevauge
+    - email: daniel.tomcej@gmail.com
+      name: dtomcej
+    - email: ldez@traefik.io
+      name: ldez
+    name: traefik
+    sources:
+    - https://github.com/traefik/traefik
+    - https://github.com/traefik/traefik-helm-chart
+    type: application
+    urls:
+    - traefik-10.24.0.tgz
+    version: 10.24.0
+generated: "2022-08-04T22:00:33.092200397+02:00"
