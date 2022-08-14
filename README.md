@@ -1,0 +1,3 @@
+```
+helm repo index .
+```
