@@ -8,7 +8,7 @@ entries:
         url: https://cert-manager.io/public-keys/cert-manager-keyring-2021-09-20-1020CF3C033D4F35BAE1C19E1226061C665DF13E.gpg
     apiVersion: v1
     appVersion: v1.9.1
-    created: "2022-12-09T23:16:50.377768632+01:00"
+    created: "2023-02-06T20:11:40.553056342+01:00"
     description: A Helm chart for cert-manager
     digest: 46273177b5ca6930af8047cd52bf0b784c8482ac042e7812d08643c2898692d5
     home: https://github.com/cert-manager/cert-manager
@@ -32,7 +32,7 @@ entries:
   cert-manager-webhook-namecheap:
   - apiVersion: v2
     appVersion: v0.2.0
-    created: "2022-12-09T23:16:50.378193063+01:00"
+    created: "2023-02-06T20:11:40.553276182+01:00"
     description: Namecheap Webhook for Cert Manager
     digest: c4cabb6b5d0e1f6c2e31417330cdb2fadc94f23fd9a5f2decd2ed1b97afd8922
     name: cert-manager-webhook-namecheap
@@ -41,17 +41,17 @@ entries:
     version: 0.2.0
   k8s-db-operator:
   - apiVersion: v2
-    created: "2022-12-09T23:16:50.378534617+01:00"
+    created: "2023-02-06T20:11:40.553432312+01:00"
     description: k8s-db-operator helm chart
-    digest: bf2bddcb912b46ad404a09f638e113a7b089004489f956875bde713cad0396c6
+    digest: 967f5b2a349eb59eeac15b0856c3c66299e0e8b7bb5806388918d1df93b6aa2c
     name: k8s-db-operator
     urls:
-    - k8s-db-operator-0.0.4.tgz
-    version: 0.0.4
+    - k8s-db-operator-0.0.5.tgz
+    version: 0.0.5
   nextcloud:
   - apiVersion: v2
     appVersion: 25.0.1
-    created: "2022-12-09T23:16:50.395830843+01:00"
+    created: "2023-02-06T20:11:40.563227885+01:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -93,7 +93,7 @@ entries:
   reflector:
   - apiVersion: v2
     appVersion: 6.1.47
-    created: "2022-12-09T23:16:50.396436185+01:00"
+    created: "2023-02-06T20:11:40.563611116+01:00"
     description: A Helm chart to deploy Reflector
     digest: 821bfd118325d44c5f1f42b3fa8e154f5012d36c369460048cb37bb3457e6dfd
     home: https://github.com/emberstack/kubernetes-reflector
@@ -119,7 +119,7 @@ entries:
   traefik:
   - apiVersion: v2
     appVersion: 2.8.0
-    created: "2022-12-09T23:16:50.398617981+01:00"
+    created: "2023-02-06T20:11:40.564858367+01:00"
     description: A Traefik based Kubernetes ingress controller
     digest: ec878db0b3ca36dda265c334b07e798dfefe156fca31b4f91bdbe8ae598fb7ca
     home: https://traefik.io/
@@ -142,4 +142,4 @@ entries:
     urls:
     - traefik-10.24.0.tgz
     version: 10.24.0
-generated: "2022-12-09T23:16:50.373988798+01:00"
+generated: "2023-02-06T20:11:40.550409719+01:00"
